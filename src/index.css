@@ -1,0 +1,28 @@
+#rodape {
+    width: 1440px;
+    height: 454px;
+    background-color: #1F1F1F;
+    padding: 20px;  
+    color: #FFFFFF; 
+
+}
+
+hr {
+
+    position: absolute;
+    width: 1240px;
+    height: 1px;
+    left: 100px;
+    top: 80%;
+    background: #FFFFFF;
+    opacity: 0.3;
+}
+
+#digital {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+
+}
