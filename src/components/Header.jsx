@@ -25,14 +25,7 @@ const HeaderContainer = styled.header`
         left: 104px;
         top: 42px;
     }
-    #caixa {
-        position: absolute;
-        width: 993px;
-        height: 129px;
-        left: 100px;
-        top: 34px;
-
-    }
+    
     #pesquisa {
    
         position: absolute;
@@ -166,16 +159,6 @@ const Header = () => {
                 <Button id="botão" label="Entre"/>
                 <img id="carrinho" src={miniCart} alt="Carrinho" />
                 
-            </div>
-            <div>
-                <nav>
-                    <ul id="lista">
-                        <li id="home"><a href="https://www.google.com.br/">Home</a></li>
-                        <li id="produto"><a href="https://www.google.com.br/">Produto</a></li>
-                        <li id="categorias"><a href="https://www.google.com.br/">Categorias</a></li>
-                        <li id="pedidos"><a href="https://www.google.com.br/">Meus Pedidos</a></li>
-                    </ul>
-                </nav>
             </div>
         </HeaderContainer>
      );
