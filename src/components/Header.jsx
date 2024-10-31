@@ -5,6 +5,7 @@ import { Button } from 'primereact/button';
 import "primereact/resources/themes/lara-light-pink/theme.css"
 import styled from "styled-components"
 import { useState } from "react";
+import sapato from "../assets/sapato.svg"
 
 
 const HeaderContainer = styled.header`
@@ -158,6 +159,8 @@ const Header = () => {
                 
                 <Button id="botão" label="Entre"/>
                 <img id="carrinho" src={miniCart} alt="Carrinho" />
+
+                <div><img src="sapato" alt={sapato} /></div>
                 
             </div>
         </HeaderContainer>

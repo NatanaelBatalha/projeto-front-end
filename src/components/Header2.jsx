@@ -5,6 +5,9 @@ import { Button } from 'primereact/button';
 // import "primereact/resources/themes/lara-light-pink/theme.css"
 import styled from "styled-components"
 import { useState } from "react";
+import { Link } from "react-router-dom"
+import sapato from "../assets/sapato.svg"
+import ornament from "../assets/ornament.svg"
 
 const HeaderContainer = styled.header`
     #53578 {
@@ -197,7 +200,7 @@ const HeaderContainer = styled.header`
         width: 102px;
         height: 28px;
         left: 991px;
-        top: 50px;
+        top: 38px;
 
         font-family: 'Inter';
         font-style: normal;
@@ -218,17 +221,6 @@ const HeaderContainer = styled.header`
         top: 1.18%;
         bottom: 97.76%;
     }
-    #retangulo156 {
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-
-        /* primary */
-        background: #C92071;
-        border-radius: 8px;
-    }
     #logo {
         /* logo */
 
@@ -239,18 +231,19 @@ const HeaderContainer = styled.header`
         top: 42px;
     }
     #button {
-        /* position: absolute;
+        position: absolute;
         left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%; */
+        right: 20%;
+        top: 45px;
+        background-color: #C92071;
 
         /* Text X-Small Bold */
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
-        line-height: 22px;
+        line-height: 15px;
+        width: 110px;
         /* or 157% */
         display: flex;
         align-items: center;
@@ -259,6 +252,35 @@ const HeaderContainer = styled.header`
 
         /* light-gray-3 */
         color: #F5F5F5;
+    }
+    #carrinho {
+        /* position: absolute;
+        left: 90%;
+        top: 75px;
+        bottom: 2px; */
+        position: absolute;
+        width: 33px;
+        height: 29px;
+        left: 1307px;
+        top: 60px;
+    }
+    #53578 {
+        position: absolute;
+        width: 1440px;
+        height: 875px;
+        left: 0px;
+        top: 0px;
+    }
+    #sapato {
+        position: absolute;
+        width: 733.51px;
+        height: 431.61px;
+        left: 513.25px;
+        top: 446.91px;
+
+        background: url(sapato.svg);
+        filter: drop-shadow(0px 4px 25px rgba(119, 15, 21, 0.08));
+        transform: rotate(-19.34deg);
     }
 
 `
@@ -271,10 +293,21 @@ const Header2 = () => {
 
         <HeaderContainer>
             <div id="53578">
+                <div id="sapato">
+                    <img src={sapato} alt="sapato" />   
+                </div>
+                <div id="53572">
+                    <div id="53570">
+                        <p>Melhores ofertas personalizadas</p>
+                        <Button id="ofertas" label="Ver Ofertas"/>
+                        <h1>Queima de stoque Nike </h1>
+                        <p>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.
+                        Ver Ofertas</p>
+                    </div>
+                </div>
                 <div id="53577" className="retangulo4">
                     <div id="botao">
-                        <Button id="button" label="Entre" className="retangulo156"/>
-                    </div>
+                        <Button id="button" label="Entre"/></div>
                     <div id="carrinho">
                         <img src={miniCart} alt="Carrinho" />
                     </div>
@@ -283,7 +316,6 @@ const Header2 = () => {
                     </div>
                     <div id="53576">
                         <div id="53574">
-
                             <p id="53579" className="cadastro">Cadastre-se</p>
                             <div id="53546" className="retangulo1">
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} placeholder="Pesquisar produto..."/>
@@ -299,10 +331,8 @@ const Header2 = () => {
                                         <li id="pedidos"><a href="https://www.google.com.br/">Meus Pedidos</a></li>
                                     </ul>
                                 </nav>
-
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
