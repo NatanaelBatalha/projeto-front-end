@@ -1,14 +1,17 @@
 import { Children } from "react";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Header2 from "./components/Header2";
+import Header from "./components/Header"
+import Home from "./components/Home"
 
 const App = () => {
     return ( 
         <>
             <div>
-                <Header2/>
+                {/* <Header /> */}
             </div> 
+            <div>
+                <Home />
+            </div>
             <div>
                 {/* <Footer /> */}
             </div>
