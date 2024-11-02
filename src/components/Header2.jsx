@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom"
 import sapato from "../assets/sapato.svg"
 import ornament from "../assets/ornament.svg"
+import "typeface-inter"
 
 const HeaderContainer = styled.header`
     #53578 {
@@ -197,7 +198,7 @@ const HeaderContainer = styled.header`
     }
     .cadastro {
         position: absolute;
-        width: 102px;
+        width: 107px;
         height: 28px;
         left: 991px;
         top: 38px;
@@ -207,11 +208,8 @@ const HeaderContainer = styled.header`
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        /* identical to box height, or 175% */
         letter-spacing: 0.75px;
         text-decoration-line: underline;
-
-        /* dark-gray-2 */
         color: #474747;
     }
     #botao {
@@ -220,15 +218,6 @@ const HeaderContainer = styled.header`
         right: 14.1%;
         top: 1.18%;
         bottom: 97.76%;
-    }
-    #logo {
-        /* logo */
-
-        position: absolute;
-        width: 253px;
-        height: 44px;
-        left: 104px;
-        top: 42px;
     }
     #button {
         position: absolute;
@@ -253,6 +242,13 @@ const HeaderContainer = styled.header`
         /* light-gray-3 */
         color: #F5F5F5;
     }
+    #logo {
+        position: absolute;
+        width: 253px;
+        height: 44px;
+        left: 104px;
+        top: 42px;
+    }
     #carrinho {
         /* position: absolute;
         left: 90%;
@@ -276,33 +272,81 @@ const HeaderContainer = styled.header`
         width: 733.51px;
         height: 431.61px;
         left: 513.25px;
-        top: 446.91px;
-
-        background: url(sapato.svg);
+        top: 0px;
         filter: drop-shadow(0px 4px 25px rgba(119, 15, 21, 0.08));
-        transform: rotate(-19.34deg);
+        transform: rotate(-5.34deg);
     }
+    .retangulo7 {
+        position: absolute;
+        width: 1440px;
+        height: 700px;
+        left: 0px;
+        top: 194px;
+        background: #F5F5F5;
+    }
+    #ornamento {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 1263px;
+        top: 70px;
 
+        color: #F6AA1C;
+        /* opacity: 0.4; */
+    }
+    .nike {
+        position: absolute;
+        width: 510px;
+        left: 100px;
+        top: 100px;
+    }
+    .queima{
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 64px;
+        color: #1F1F1F;
+        margin: 5px 0;
+        line-height: 66px
+    }
+    .bottom {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #474747;
+        line-height: 34px
+    }
+    .top {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        color: #F6AA1C;
+    }
 `
 
 const Header2 = () => {
 
     const [value, setValue] = useState()
 
-    return (
-
+    return(
         <HeaderContainer>
             <div id="53578">
-                <div id="sapato">
-                    <img src={sapato} alt="sapato" />   
-                </div>
-                <div id="53572">
-                    <div id="53570">
-                        <p>Melhores ofertas personalizadas</p>
-                        <Button id="ofertas" label="Ver Ofertas"/>
-                        <h1>Queima de stoque Nike </h1>
-                        <p>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.
+                
+                <div className="retangulo7" id="53572">
+                    <div id="sapato">
+                        <img src={sapato} alt="sapato" />   
+                    </div>
+                    <img id="ornamento" src={ornament} alt="ornamento" />
+                    <div id="53570" className="nike">
+                        <p className="top">Melhores ofertas personalizadas</p>
+                        <h1 className="queima">Queima de stoque Nike 🔥 </h1>
+                        <p className="bottom">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.
                         Ver Ofertas</p>
+                        <Button className="ofertas" label="Ver Ofertas"/>
                     </div>
                 </div>
                 <div id="53577" className="retangulo4">
