@@ -128,17 +128,14 @@ const HeaderContainer = styled.header`
         left: 100px;
         top: 136px;
 
-        /* Text Small Bold */
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
-        /* identical to box height, or 150% */
         text-align: center;
         letter-spacing: 0.75px;
 
-        /* primary */
         color: #C92071;
     }
     #53574 {
@@ -403,7 +400,7 @@ const Header = () => {
                     </div>
                     <div id="53576">
                         <div id="53574">
-                            <p id="53579" className="cadastro">Cadastre-se</p>
+                            <p id="53579" className="cadastro" onClick="">Cadastre-se</p>
                             <div id="53546" className="retangulo1">
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} placeholder="Pesquisar produto..." />
                             </div>
