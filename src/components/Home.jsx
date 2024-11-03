@@ -97,6 +97,15 @@ const HomeConteiner = styled.div`
         order: 0;
         flex-grow: 0;
     }
+    .textoColecao {
+        position: absolute;
+        width: 283px;
+        height: 38px;
+        left: 579px;
+        top: 1322px;
+        
+
+    }
 `;
 const StyledButton = styled.button`
     position: absolute;
@@ -133,17 +142,20 @@ const StyledButton = styled.button`
 const Home = () => {
     return (
         <HomeConteiner>
-            <p>Coleções em destaque</p>
+            <div className="textoColecao">
+                <p>Coleções em destaque</p>
+            </div>
+            
             <div className="retanguloDestaque">
                 <p className="novoDrop">Novo drop Supreme</p>
                 <div className="frame9">
                     <p className="t30off">30% OFF</p>
                 </div>
                 <div>
-                    <StyledButton onClick=''>Comprar</StyledButton>
+                    <StyledButton>Comprar</StyledButton>
                 </div>
                 <div className="star">
-                    <img src={star} alt="" />
+                    <img src={star} alt="Camisa" />
                 </div>
             </div>
             <div className="retanguloDestaque1">
@@ -152,10 +164,10 @@ const Home = () => {
                     <p className="t30off">30% OFF</p>
                 </div>
                 <div>
-                    <StyledButton onClick=''>Comprar</StyledButton>
+                    <StyledButton>Comprar</StyledButton>
                 </div>
                 <div className="ddd1">
-                    <img src={ddd1} alt="" />
+                    <img src={ddd1} alt="Sapato" />
                 </div>
             </div>
             <div className="retanguloDestaque2">
@@ -164,15 +176,13 @@ const Home = () => {
                     <p className="t30off">30% OFF</p>
                 </div>
                 <div>
-                    <StyledButton onClick=''>Comprar</StyledButton>
+                    <StyledButton>Comprar</StyledButton>
                 </div>
                 <div className="fone">
-                    <img src={fone} alt="" />
+                    <img src={fone} alt="Fone" />
                 </div>
             </div>
-            <div></div>
-            <div></div>
-            <p>Coleções em destaque</p>
+            <p className="colecao">Coleções em destaque</p>
             <div></div>
             <div></div>
             <div></div>

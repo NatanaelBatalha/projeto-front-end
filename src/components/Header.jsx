@@ -400,7 +400,7 @@ const Header = () => {
                     </div>
                     <div id="53576">
                         <div id="53574">
-                            <p id="53579" className="cadastro" onClick="">Cadastre-se</p>
+                            <p id="53579" className="cadastro">Cadastre-se</p>
                             <div id="53546" className="retangulo1">
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} placeholder="Pesquisar produto..." />
                             </div>
