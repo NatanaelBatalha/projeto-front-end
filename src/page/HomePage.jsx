@@ -8,13 +8,9 @@ import frame13fone from "../assets/frame13fone.svg"
 import frame12calca from "../assets/frame12calca.svg"
 import frame10camisa from "../assets/frame10camisa.svg"
 import camisa from "../assets/camisaTeste.svg"
+import teste from "../assets/image/Vector (1).png"
 
 const HomeConteiner = styled.div`
-    .retangulotela {
-        height: 200vh;
-        margin: 0;
-        background-color: #45a2ff;
-    }
     .retanguloDestaque {
         position: absolute;
         width: 405px;
@@ -178,10 +174,6 @@ const HomeConteiner = styled.div`
         text-align: center;
         letter-spacing: 0.75px;
         color: #474747;
-
-        &:hover {
-            color: white;
-        }
     }
     .produtoAlta {
         position: absolute;
@@ -215,6 +207,8 @@ const HomeConteiner = styled.div`
 
         color: #C92071;
     }
+    
+    
 
 `;
 const StyledButton = styled.button`
@@ -295,7 +289,7 @@ const Home = () => {
                 <p className="textoColecao2">Coleções em destaque</p>
                 <div className="blusaCalçaFoneTenis">
                     <div className="imagemCamisa">
-                        <img className="frame10camisa" src={camisa} alt="frame10camisa" />
+                        <img className="frame10camisa" src={frame12calca} alt="frame10camisa" />
                         <p className="camisetas">Camisetas</p>
                     </div>
                     <div className="imagemBones">

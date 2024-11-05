@@ -1,10 +1,6 @@
-import { Children } from "react";
-import Footer from "./components/Footer";
-import Header from "./components/Header"
-import Home from "./components/Home"
 import styled from "styled-components";
-
-
+import HomePage from "./page/HomePage"
+import ProductCard from "./components/ProductCard";
 
 const App = () => {
     return ( 
@@ -14,14 +10,12 @@ const App = () => {
             </div> 
             <br />
             <div>
-                <Home />
+                {/* <HomePage /> */}
+                <ProductCard />
             </div>
             <div>
                 {/* <Footer /> */}
-            </div>
-             
-            
-              
+            </div>   
         </>
      );
 }
