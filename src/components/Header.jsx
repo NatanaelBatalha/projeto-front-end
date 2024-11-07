@@ -4,12 +4,13 @@ import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import "primereact/resources/themes/lara-light-pink/theme.css"
 import styled from "styled-components"
-import { useState } from "react";
-import { Link } from "react-router-dom"
+import { useState } from "react"
 import sapato from "../assets/sapato.svg"
 import ornament from "../assets/ornament.svg"
 import "typeface-inter"
 import ellipse16 from "../assets/ellipse16.svg"
+import { Link } from "react-router-dom";
+import HomePage from "../page/HomePage"
 
 const HeaderContainer = styled.header`
     #53578 {
@@ -400,7 +401,7 @@ const Header = () => {
                     </div>
                     <div id="53576">
                         <div id="53574">
-                            <p id="53579" className="cadastro">Cadastre-se</p>
+                            <p id="53579" className="cadastro"><Link to={<HomePage/>}>Cadastre-se</Link></p>
                             <div id="53546" className="retangulo1">
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} placeholder="Pesquisar produto..." />
                             </div>
