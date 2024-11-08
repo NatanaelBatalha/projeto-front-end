@@ -9,6 +9,7 @@ import frame12calca from "../assets/frame12calca.svg"
 import frame10camisa from "../assets/frame10camisa.svg"
 import camisa from "../assets/camisaTeste.svg"
 import teste from "../assets/image/Vector (1).png"
+import Header from "../components/Header";
 
 const HomeConteiner = styled.div`
     .retanguloDestaque {

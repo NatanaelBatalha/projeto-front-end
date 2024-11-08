@@ -1,24 +1,28 @@
-import styled from "styled-components";
 import HomePage from "./page/HomePage"
-import ProductCard from "./components/ProductCard";
 import Header from "./components/Header";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import ProductListingPage from "./page/ProductListingPage";
 
-const App = () => {
-    return ( 
-        <>
-            <div>
-                <Header />
-            </div> 
-            <br />
-            <div>
-                {/* <HomePage /> */}
-                {/* <ProductCard /> */}
-            </div>
-            <div>
-                {/* <Footer /> */}
-            </div>   
-        </>
-     );
-}
- 
+function App() {
+    return (
+        <BrowserRouter>
+            <Header />
+            <Routes>
+                <Route path="/page/ProductListingPage/" element={<ProductListingPage />} />
+                <Route path="/" element={<HomePage />} />
+            </Routes>
+        </BrowserRouter>
+    );
+}; 
+
 export default App;
+
+// const App = () => {
+//     return ( 
+//         <>
+//             <Header/>
+//         </>
+//      );
+// }
+ 
+// export default App;

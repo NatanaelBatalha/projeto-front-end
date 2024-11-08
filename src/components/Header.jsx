@@ -146,46 +146,21 @@ const HeaderContainer = styled.header`
         left: 384px;
         top: 34px;
     }
-    #53546 {
-        position: absolute;
-        width: 559px;
-        height: 60px;
-        left: 384px;
-        top: 34px;
-    }
     .retangulo1 {
         position: absolute;
         width: 559px;
         height: 60px;
         left: 384px;
-        top: 34px;
+        top: 45px;
+        
+        
 
         /* dark-gray-2 */
-        background: #474747;
+        /* background: #474747;
         opacity: 0.04;
-        border-radius: 8px;
+        border-radius: 8px; */
     }
-    div ::placeholder {
-        position: absolute;
-        width: 166px;
-        height: 28px;
-        left: 408px;
-        top: 50px;
-
-        /* Text Small - Desktop */
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        /* identical to box height, or 175% */
-        letter-spacing: 0.75px;
-
-        /* dark-gray-3 */
-        color: #666666;
-
-        opacity: 0.6;
-    }
+    
     #53579 {
         position: absolute;
         width: 102px;
@@ -401,7 +376,7 @@ const Header = () => {
                     </div>
                     <div id="53576">
                         <div id="53574">
-                            <p id="53579" className="cadastro"><Link to={<HomePage/>}>Cadastre-se</Link></p>
+                            <p id="53579" className="cadastro"><Link to="/page/ProductListingPage/">Cadastre-se</Link></p>
                             <div id="53546" className="retangulo1">
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} placeholder="Pesquisar produto..." />
                             </div>
@@ -410,7 +385,8 @@ const Header = () => {
                             <div id="53530">
                                 <nav>
                                     <ul className="lista">
-                                        <li id="home"><a href="https://www.google.com.br/">Home</a></li>
+                                        {/* <li id="home"><Link to="/page/HomePage">Home</Link></li> */}
+                                        <li id="home"><a href="/page/HomePage/">Home</a></li>
                                         <li id="produtos"><a href="https://www.google.com.br/">Produto</a></li>
                                         <li id="categorias"><a href="https://www.google.com.br/">Categorias</a></li>
                                         <li id="pedidos"><a href="https://www.google.com.br/">Meus Pedidos</a></li>
