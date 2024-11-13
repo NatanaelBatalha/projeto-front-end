@@ -10,6 +10,7 @@ import frame10camisa from "../assets/frame10camisa.svg"
 import camisa from "../assets/camisaTeste.svg"
 import teste from "../assets/image/Vector (1).png"
 import Header from "../components/Header";
+import ProductCard from "../components/ProductCard"
 
 const HomeConteiner = styled.div`
     .retanguloDestaque {
@@ -208,7 +209,7 @@ const HomeConteiner = styled.div`
 
         color: #C92071;
     }
-    
+
     
 
 `;
@@ -319,15 +320,7 @@ const Home = () => {
                     </div>
                     <p className="produtoAlta">Produto em alta</p>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
             </div>
-            
         </HomeConteiner>
     );
 }

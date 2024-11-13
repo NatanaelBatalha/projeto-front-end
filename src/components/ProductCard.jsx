@@ -11,7 +11,6 @@ const ProductCardConteiner = styled.div`
         top: 1699px;
 
         border-radius: solid #8F8F8F;
-        background-color: #ca1b1b;
     }
     .maskGrupo {
         box-sizing: border-box;
@@ -28,10 +27,10 @@ const ProductCardConteiner = styled.div`
     }
     .nomeItem {
         position: absolute;
-        width: 283px;
+        width: 290px;
         height: 38px;
-        left: 100px;
-        top: 2062px;
+        left: 0px;
+        top: 340px;
 
         font-family: 'Inter';
         font-style: normal;
@@ -41,12 +40,12 @@ const ProductCardConteiner = styled.div`
         letter-spacing: 0.75px;
         color: #474747;
     }
-    .nome {
+    .nomeTenis {
         position: absolute;
         width: 35px;
         height: 24px;
-        left: 100px;
-        top: 2038px;
+        left: 0px;
+        top: 320px;
 
         font-family: 'Inter';
         font-style: normal;
@@ -88,7 +87,36 @@ const ProductCardConteiner = styled.div`
         letter-spacing: 0.75px;
         color: #1F1F1F;
     }
+    .t30off {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px;
+        gap: 10px;
 
+        background: #E7FF86;
+        border-radius: 29px;
+
+        position: absolute;
+        width: 96px;
+        height: 32px;
+        left: 30px;
+        top: 0px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.75px;
+        color: #474747;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 1;
+    }
 
 
 `
@@ -105,7 +133,7 @@ const ProductCard = () => {
                     <p>qualquer coisa</p>
                 </div>
                 <p className="nomeItem">K-Swiss V8 - Masculino</p>
-                <p className="nome">Tênis</p>
+                <p className="nomeTenis">Tênis</p>
                 <p className="t30off">30% OFF</p>
                 <div>
                     <div className="maskGrupo retangulo21">
