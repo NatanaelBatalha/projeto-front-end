@@ -6,37 +6,23 @@ import ProductCard from "../src/components/ProductCard"
 import ProductListing from "../src/components/ProductListing"
 import Gallery from "../src/components/Gallery"
 import Logo from "./components/Logo";
-import ProductOptions from "../src/components/ProductOptions"
 import styled from "styled-components";
-
-const AppContainer = styled.div`
-    /* position: absolute;
-    left: 0%;
-    background-color: #F5F5F5;
-    background-color: #d31b39; */
-
-    position: absolute;
-    background-color: red;
-    margin: 0px;
-    height: 100vh;
-    width: 100%;
-    
-    
-`
-
+import Footer from "./components/Footer";
 
 function App() {
     return (
 
-        <AppContainer>
-            {/* <Header /> */}
+        <>
+            <Header />
             {/* <ProductOptions />
             <Gallery />
             <ProductCard />
             <ProductListing />
             <Logo /> */}
+            
+            <Footer />
 
-            <BrowserRouter>
+            {/* <BrowserRouter>
                 <Header />
                 <Gallery />
                 <Routes>
@@ -44,8 +30,9 @@ function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/componets/ProductCard/" element={<ProductCard />} />
                 </Routes>
-            </BrowserRouter>
-        </AppContainer>
+                <Footer/>
+            </BrowserRouter> */}
+        </>
         
     );
 }; 

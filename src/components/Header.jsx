@@ -251,6 +251,10 @@ const Header = () => {
                             <div id="53530">
                                 <nav>
                                     <ul className="lista">
+                                        <li id="home">Home</li>
+                                        <li id="produtos"><Link to="/">Produto</Link></li>
+                                        <li id="categorias"><Link to="/">Categorias</Link></li>
+                                        <li id="pedidos"><Link to="/">Home</Link></li>
                                         <li id="home"><Link to="/">Home</Link></li>
                                         <li id="produtos"><Link to="/">Produto</Link></li>
                                         <li id="categorias"><Link to="/">Categorias</Link></li>
