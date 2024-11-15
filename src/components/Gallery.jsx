@@ -6,7 +6,7 @@ import ornament from "../assets/ornament.svg"
 import "typeface-inter"
 import ellipse16 from "../assets/ellipse16.svg"
 
-const HeaderContainer = styled.header`
+const GalletyContainer = styled.header`
     #53578 {
         position: absolute;
         width: 1440px;
@@ -111,9 +111,9 @@ const HeaderContainer = styled.header`
     }
 `
 
-const Header = () => {
+const Gallery = () => {
     return (
-        <HeaderContainer>
+        <GalletyContainer>
             <div id="53578">
 
                 <div className="retangulo7" id="53572">
@@ -139,9 +139,9 @@ const Header = () => {
                 </div>
             </div>
 
-        </HeaderContainer>
+        </GalletyContainer>
 
     );
 }
 
-export default Header;
+export default Gallery;

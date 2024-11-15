@@ -242,7 +242,7 @@ const Header = () => {
                     </div>
                     <div id="53576">
                         <div id="53574">
-                            <p id="53579" className="cadastro"><Link to="/page/ProductListingPage/">Cadastre-se</Link></p>
+                            {/* <p id="53579" className="cadastro"><Link to="/page/ProductListingPage/">Cadastre-se</Link></p> */}
                             <div id="53546" className="retangulo1">
                                 <InputText value={value} onChange={(e) => setValue(e.target.value)} placeholder="Pesquisar produto..." />
                             </div>
@@ -252,13 +252,14 @@ const Header = () => {
                                 <nav>
                                     <ul className="lista">
                                         <li id="home">Home</li>
-                                        <li id="produtos"><Link to="/">Produto</Link></li>
-                                        <li id="categorias"><Link to="/">Categorias</Link></li>
-                                        <li id="pedidos"><Link to="/">Home</Link></li>
+                                        <li id="produtos">Produto</li>
+                                        <li id="categorias">Categorias</li>
+                                        <li id="pedidos">Meus Pedidos</li>
+                                        {/* <li id="pedidos"><Link to="/">Home</Link></li>
                                         <li id="home"><Link to="/">Home</Link></li>
-                                        <li id="produtos"><Link to="/">Produto</Link></li>
+                                        <li id="produtos"><Link to="/">Ver Produtos</Link></li>
                                         <li id="categorias"><Link to="/">Categorias</Link></li>
-                                        <li id="pedidos"><Link to="/">Home</Link></li>
+                                        <li id="pedidos"><Link to="/">Pedidos</Link></li> */}
                                     </ul>
                                 </nav>
                             </div>

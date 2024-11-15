@@ -8,19 +8,29 @@ import Gallery from "../src/components/Gallery"
 import Logo from "./components/Logo";
 import styled from "styled-components";
 import Footer from "./components/Footer";
+import Layout from "./components/layout";
+import Gallery2 from "./components/Gallery2";
+
+
 
 function App() {
     return (
 
         <>
-            <Header />
+            <HomePage />
+            {/* <Gallery2 /> */}
+
+            {/* <Layout /> */}
+            {/* <Header /> */}
             {/* <ProductOptions />
             <Gallery />
             <ProductCard />
             <ProductListing />
             <Logo /> */}
             
-            <Footer />
+            
+            
+            {/* <Footer /> */}
 
             {/* <BrowserRouter>
                 <Header />
