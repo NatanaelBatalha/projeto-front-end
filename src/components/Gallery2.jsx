@@ -5,6 +5,12 @@ import { Button } from "primereact/button";
 
 
 const Gallery2Container = styled.div`
+    .galleryInferior {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -30px;
+    }
     .imagemTenis {
         position: absolute;
         width: 573px;
@@ -112,23 +118,24 @@ const Gallery2 = () => {
 
     return ( 
         <Gallery2Container>
-            <div className="imagemTenis">
-                <img src={laye1} alt="Tenis" />
-            </div>
-            <div className="posicao">
-                <img src={ellipse11} alt="circulo" className="ellipse11"/>
-                <div className="blocoTexto">
-                    <div className="botao">
-                        <Button className="button" label="Ver Ofertas"/>
-                    </div>
-                    <p className="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                    <p className="titulo">Air Jordan edição de 
-                    colecionador</p>
-                    <p className="oferta">Oferta especial</p>
+            <div className="galleryInferior">
+                <div className="imagemTenis">
+                    <img src={laye1} alt="Tenis" />
                 </div>
-
-
+                <div className="posicao">
+                    <img src={ellipse11} alt="circulo" className="ellipse11"/>
+                    <div className="blocoTexto">
+                        <div className="botao">
+                            <Button className="button" label="Ver Ofertas"/>
+                        </div>
+                        <p className="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        <p className="titulo">Air Jordan edição de 
+                        colecionador</p>
+                        <p className="oferta">Oferta especial</p>
+                    </div>
+                </div>
             </div>
+            
         </Gallery2Container>
      );
 }

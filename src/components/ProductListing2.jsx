@@ -1,63 +1,70 @@
-import ProductCard from "../components/ProductCard"
 import styled from "styled-components";
+import ProductCard from "./ProductCard";
+import ProductOptions from "./ProductOptions"
 
-const ProductListingContainer = styled.div`
-    .bloco1 {
+const ProductListing2Container = styled.div`
+    .bloco2 {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 100px;
-        top: 1699px;
-
-        border-radius: solid #8F8F8F;
+        width: 600px;
+        height: 918px;
+        left: 436px;
+        top: 332px;
     }
     .pro1 {
         position: absolute;
-        left: 48.5%;
+        left: 100%;
         top: 5px;
     }
     .pro2 {
         position: absolute;
-        left: 32.5%;
+        left: 50%;
         top: 5px;
     }
     .pro3 {
         position: absolute;
-        left: 16.5%;
+        left: 0%;
         top: 5px;
     }
     .pro4 {
         position: absolute;
-        left: 0,5%;
-        top: 5px;
+        left: 0%;
+        top: 500px;
     }
     .pro5 {
         position: absolute;
-        left: 48.5%;
+        left: 50%;
         top: 500px;
     }
     .pro6 {
         position: absolute;
-        left: 32.5%;
+        left: 100%;
         top: 500px;
     }
     .pro7 {
         position: absolute;
-        left: 16.5%;
-        top: 500px;
+        left: 0%;
+        top: 1000px;
     }
     .pro8 {
         position: absolute;
-        left: 0,5%;
-        top: 500px;
+        left: 50%;
+        top: 1000px;
+    }
+    .pro9 {
+        position: absolute;
+        left: 100%;
+        top: 1000px;
     }
 
 `
 
-const ProductListing = () => {
-    return ( 
-        <ProductListingContainer>
-            <div className="bloco1">
+const ProductListing2 = () => {
+    return (
+        <ProductListing2Container>
+            <>
+                <ProductOptions />
+            </>
+            <div className="bloco2">
                 <div className="pro1"><ProductCard /></div>
                 <div className="pro2"><ProductCard /></div>
                 <div className="pro3"><ProductCard /></div>
@@ -66,10 +73,10 @@ const ProductListing = () => {
                 <div className="pro6"><ProductCard /></div>
                 <div className="pro7"><ProductCard /></div>
                 <div className="pro8"><ProductCard /></div>
+                <div className="pro9"><ProductCard /></div>
             </div>
-        </ProductListingContainer>
+        </ProductListing2Container>
      );
 }
-
  
-export default ProductListing;
+export default ProductListing2;

@@ -3,15 +3,6 @@ import tenis from "../assets/image/image.png"
 import tenis2 from "../assets/tenis.svg"
 
 const ProductCardConteiner = styled.div`
-    .grupo53593 {
-        position: absolute;
-        width: 292px;
-        height: 439px;
-        left: 100px;
-        top: 1699px;
-
-        border-radius: solid #8F8F8F;
-    }
     .maskGrupo {
         box-sizing: border-box;
 

@@ -17,7 +17,9 @@ function App() {
     return (
 
         <>
-            <HomePage />
+
+            <ProductListingPage />
+            {/* <HomePage /> */}
             {/* <Gallery2 /> */}
 
             {/* <Layout /> */}
