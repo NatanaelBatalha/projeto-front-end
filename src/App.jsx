@@ -10,6 +10,7 @@ import styled from "styled-components";
 import Footer from "./components/Footer";
 import Layout from "./components/layout";
 import Gallery2 from "./components/Gallery2";
+import ProductOptions from "./components/ProductOptions";
 
 
 
@@ -17,8 +18,8 @@ function App() {
     return (
 
         <>
-
-            <ProductListingPage />
+            <ProductOptions />
+            {/* <ProductListingPage /> */}
             {/* <HomePage /> */}
             {/* <Gallery2 /> */}
 
